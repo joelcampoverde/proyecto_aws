@@ -1,0 +1,163 @@
+Gestor de Tareas
+
+Una aplicación web de gestión de tareas que permite a los usuarios crear, organizar y controlar sus tareas de manera eficiente. El backend está desarrollado con Django REST Framework y el frontend con Vue.js 3, ofreciendo una experiencia dinámica y responsiva.
+
+Descripción
+
+Gestor de Tareas es una aplicación SPA (Single Page Application) que permite a los usuarios:
+
+Registrarse e iniciar sesión con autenticación JWT.
+
+Crear, leer, actualizar y eliminar tareas.
+
+Mantener un registro organizado de sus tareas diarias.
+
+El proyecto combina un backend robusto en Django con un frontend interactivo en Vue.js, garantizando seguridad y buena experiencia de usuario.
+
+Características
+
+Registro e inicio de sesión de usuarios con JWT.
+
+CRUD completo de tareas.
+
+Interfaz dinámica y responsiva.
+
+
+Tecnologías
+
+Backend:
+
+Python 3.11
+
+Django 5.x
+
+Django REST Framework
+
+djangorestframework-simplejwt (autenticación JWT)
+
+SQLite (desarrollo) / PostgreSQL (producción opcional)
+
+Frontend:
+
+Vue.js 3
+
+Vue Router
+
+Axios
+
+TailwindCSS
+
+Herramientas adicionales:
+
+VSCode, Postman, Git
+
+Estructura del proyecto
+
+Backend (Django)
+
+project_name/
+├─ manage.py
+├─ project_name/
+│  ├─ settings.py
+│  ├─ urls.py
+├─ apps/
+│  ├─ tasks/
+│  │  ├─ models.py
+│  │  ├─ serializers.py
+│  │  ├─ views.py
+│  │  ├─ urls.py
+
+
+Frontend (Vue.js)
+
+frontend/
+├─ src/
+│  ├─ components/  # Componentes reutilizables
+│  ├─ views/       # Vistas principales
+│  ├─ router/      # Rutas de la aplicación
+│  ├─ store/       # Estado central (opcional)
+│  ├─ assets/      # Imágenes, íconos y estilos
+
+Instalación
+Backend
+
+Crear entorno virtual:
+
+python -m venv venv
+source venv/bin/activate  # Linux/macOS
+venv\Scripts\activate     # Windows
+
+
+Instalar dependencias:
+
+pip install -r requirements.txt
+
+
+Migrar base de datos:
+
+python manage.py migrate
+
+
+Crear superusuario (opcional):
+
+python manage.py createsuperuser
+
+
+Ejecutar servidor:
+
+python manage.py runserver
+
+Frontend
+
+Instalar dependencias:
+
+cd frontend
+npm install
+
+
+Ejecutar servidor de desarrollo:
+
+npm run dev
+
+Uso
+
+Acceder a http://localhost:5173/ para el frontend.
+
+Registrarse o iniciar sesión.
+
+Crear, editar, eliminar y filtrar tareas.
+
+Consultar la API en http://localhost:8000/api/ (si se habilita documentación con DRF).
+
+Decisiones de desarrollo
+
+Django REST Framework: robustez y facilidad para construir APIs seguras.
+
+Vue.js 3: interfaz reactiva y componentes reutilizables.
+
+JWT: autenticación stateless para facilitar la integración con SPA.
+
+TailwindCSS: rápido desarrollo de interfaces responsivas sin sobrecargar CSS.
+
+Pruebas
+
+Para ejecutar tests del backend:
+
+python manage.py test
+
+
+Para tests del frontend, usar librerías como Jest o Vitest (opcional).
+
+Futuras mejoras
+
+Notificaciones en tiempo real con WebSockets.
+
+Panel de estadísticas y métricas de tareas.
+
+Login social con Google o Facebook.
+
+Integración con base de datos PostgreSQL para producción.
+
+Licencia
+
+MIT License
