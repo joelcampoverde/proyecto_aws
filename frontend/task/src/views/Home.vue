@@ -137,7 +137,7 @@ import { reactive, ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import axios from 'axios'
 
-const API_BASE = 'http://localhost:8000/task/tasks/'
+const API_BASE = 'https://proyecto-aws-4.onrender.com/task/tasks/'
 
 const router = useRouter()
 const user = ref({ name: 'Usuario' })
