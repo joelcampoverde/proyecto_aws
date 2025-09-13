@@ -56,8 +56,8 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  # React por defecto
-    "https://proyecto-aws-v33z.vercel.app/"
-    "https://proyecto-aws-i9y1.vercel.app/"
+    "https://proyecto-aws-v33z.vercel.app/",
+    "https://proyecto-aws-i9y1.vercel.app/",
 ]
 
 AUTH_USER_MODEL = "accounts.User"
